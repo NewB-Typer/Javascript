@@ -1,0 +1,136 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  height: 100%;
+  width: 100%;
+}
+
+body{
+background-color: rgba(147, 186, 187, 0.801);
+display: flex;
+align-items: center;
+justify-content: center;
+overflow: hidden;
+backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
+
+}
+
+#card{
+height: 60vh;
+width: 40vw;
+border-radius: 5px;
+overflow: hidden;
+background-color: rgb(26, 42, 56);
+}
+
+#section1{
+  background-color: rgba(15, 14, 14, 0.13);
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 0.5px dotted white;
+  padding: 10px;
+}
+
+
+#section1 input{
+  font-size: 32px;
+  font-weight: 200;
+  border: none;
+height: 60px;
+padding: 10px;  /* for inner objects */
+margin-left: 0px;
+border-radius: 4px;
+width: 40vw;
+}
+
+#section1 button{
+ height: 60px;
+ width: 70px;
+  border: none;
+margin-left: 10px;
+border-radius: 4px;
+cursor: pointer;
+}
+#section2 #upper{
+  position: relative;
+  height: 33vh;
+  width: 100%;
+  border-bottom:  0.5px dotted white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#upper img{
+  padding: 2px;
+  position: relative;
+height: 70%;
+width: 50%;
+
+}
+#upper h2{
+  height: 70%;
+  width: 50%;
+  font-family: Lucida Georgia;
+  position: relative;
+  color: white;
+  font-stretch: narrower;
+  font-size: 90px;
+  font-weight: 600;
+  left: 100px;
+bottom: 2px;
+}
+#upper span{
+  position: relative;
+  color: white;
+  font-size: 30px;
+  left: -200px;
+bottom: -90px;
+width: 30%;
+}
+
+#lower{
+  height: 60%;
+  width: 100%;
+  display: flex;
+
+}
+#lower #leftS{
+height: 380px;
+width: 50%;
+border-right: 0.5px dotted white;
+padding: 30px;
+
+}
+#leftS h3{
+  position: absolute;
+  color: white;
+  font-size: 30px;
+  white-space: pre-Line;
+ 
+}
+#leftS img{
+  height: 60px;
+  width: 45px;
+position: relative;
+bottom: -40px;
+  
+}
+
+#lower #rightS{
+  height: 290px;
+  width: 50%;
+  padding: 30px;
+}
+#rightS h3{
+  font-size: 30px;
+  color: white;
+  white-space: pre-line;
+}
+
+
