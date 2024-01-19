@@ -1,0 +1,74 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+height: 100%;
+width: 100%;
+cursor: pointer;
+}
+
+body{
+  background-color: rgb(7, 81, 81);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#screen{
+  background-color: bisque;
+  height: 700px;
+  width: 440px;
+  border-radius: 10px;
+  border: 0.5px solid black;
+  position: relative;
+  
+}
+
+.section{
+  height: 100px;
+  width: 100% ;
+  border-bottom: 0.5px dotted rgb(118, 115, 115);
+  padding: 6px;
+ white-space: nowrap;
+ overflow: hidden; 
+}
+/*
+.section::-webkit-scrollbar{
+  display: none;
+}
+ Not supported in firefox so, overflow-x : hidden 
+instead of auto
+
+*/
+
+.story{
+  transform: scale(1);
+  height: 80px;
+  width: 80px;
+  border-radius:  50%;
+  border: 4px solid darkred;
+  display: inline-block;
+  overflow: hidden;
+  margin-right: 6px;
+}
+
+.story img{
+  opacity: 0.9;
+  height: 100%;
+  width: 100%;
+  object-position: center;
+  object-fit: fill;
+}
+
+#full{
+
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: none;
+  background-size: cover;
+  background-position: center
+}
