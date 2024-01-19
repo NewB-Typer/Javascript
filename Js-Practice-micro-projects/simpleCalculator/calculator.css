@@ -1,0 +1,33 @@
+
+body{
+  background-color: black;
+ 
+}
+
+.result{
+  font-family: Arial;
+  color: white;
+  font-size: 30px;
+  font-weight: lighter;
+margin-top: 15px;
+margin-bottom: 15px;
+padding: 15px;
+}
+
+
+  button{
+    background: rgb(62, 60, 60);
+border: none;
+    width: 70px;
+height: 70px;
+margin: 5px;
+   font-size: 25px;
+   border-radius: 35px;
+   color: white;
+   cursor: pointer;
+  }
+
+.add, .sub, .mul, .div{
+background-color: orange;
+  }
+ 

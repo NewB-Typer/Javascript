@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shipping Calculation</title>
+<style>
+body{
+  font-family: Arial;
+}
+
+.inputElement{
+font-size: 15px;
+padding: 10px;
+
+}
+
+.buttonElement{
+  background-color: green;
+  color: white;
+  font-size: 15px;
+  padding : 12px 15px;
+  cursor: pointer;
+}
+.warn{
+color: red;
+}
+
+
+</style>
+</head>
+<body>
+  
+<h style="color: red;">+10 VAT for amount less than $10**</h>
+
+
+<br>
+<P> Amazon Shopping Calculator</P>
+<input placeholder="Amount" onkeydown="pressKey(event)" class="inputElement">
+<button class="buttonElement" onclick="updateCost()">Calculate</button>
+
+<p class="paraElement"> </p>
+<p class="warn"></p>
+
+<script>
+function updateCost(){
+const inputValue = document.querySelector('.inputElement');
+let amount = Number(inputValue.value) * 100 ;
+
+document.querySelector('.paraElement').innerHTML = '';
+document.querySelector('.warn').innerHTML = '';
+
+
+if(amount < 100){
+document.querySelector('.warn').innerHTML = `Error: Amount cannot be less than 0$ `
+return;
+}
+// return stops the code from executing any other codes in the function
+
+else if((amount > 99) && (amount < 5000)){
+  amount += 1000;
+}
+document.querySelector(".paraElement").innerHTML = `$${amount/100}`
+
+}
+
+function pressKey(event){
+if(event.key === 'Enter'){
+  updateCost();
+}
+}
+
+</script>
+
+</body>
+</html>

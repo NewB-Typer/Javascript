@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coin Flip</title>
+</head>
+<body>
+<script>
+let genNum;
+let score = JSON.parse(localStorage.getItem('score')) ||
+{
+  wins : 0,
+  losses : 0
+}
+
+function resScore(){
+alert('Score Reset Done...')
+localStorage.removeItem('score');  
+score['wins'] = 0,
+score.losses = 0,
+scoreDisplay();
+}
+
+function scoreDisplay() {
+      document.getElementById('wins').innerText = `Wins: ${score.wins}`;
+      document.getElementById('losses').innerText = `Losses: ${score.losses}`;
+    }
+
+    function showAlert(message) {
+      const alertDiv = document.createElement('div');
+      alertDiv.innerText = message;
+      document.body.appendChild(alertDiv);
+
+       setTimeout(() => {
+        alertDiv.remove();
+      }, 500);
+    }
+
+</script>  
+
+<button onclick=" resScore()" > Reset Score</button>
+<h2> Choose : </h2>
+
+
+
+<button onclick="
+genNum = Math.random();
+showAlert('Flipping the Coin...')
+
+setTimeout(()=>{
+  genNum < 0.5 ?  alert('Heads , you won') :   alert('Tails , You lose') 
+genNum < 0.5 ? score.wins += 1 : score.losses += 1;
+alert(`Wins: ${score.wins}, Losses: ${score.losses}`);
+localStorage.setItem('score', JSON.stringify(score));
+scoreDisplay();
+}, 1000)
+"> Heads </button>
+
+
+<p><h3> OR </h3></p>
+
+<button onclick="
+genNum = Math.random();
+  showAlert('Flipping the Coin...')
+
+setTimeout(() => {
+      genNum > 0.5 ? alert('Tails, you won') : alert('Heads, You lose');
+      genNum > 0.5 ? score.wins += 1 : score.losses += 1;
+      alert(`Wins: ${score.wins}, Losses: ${score.losses}`);
+      localStorage.setItem('score', JSON.stringify(score));
+      scoreDisplay();
+    }, 1000);
+"> Tails </button>
+
+<div>
+  <p id="wins">Wins: 0</p>
+  <p id="losses">Losses: 0</p>
+</div>
+
+</body>
+</html>

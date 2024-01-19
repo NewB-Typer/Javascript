@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subscribe</title>
+<style>
+  body{
+    font-family: Arial;
+  }
+button{
+
+  border: none;
+  background-color: black;
+  color: white;
+  padding-top: 10px ;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.subd{
+font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(240, 240, 240);
+  color:black
+}
+
+
+</style>
+</head>
+<body>
+  <script>
+function subFunc(){
+  const subElement = document.querySelector('.sub-button');
+ 
+ if (subElement.innerText === 'Subscribe'){
+   subElement.innerHTML = 'Subscribed';
+   subElement.classList.add('subd');
+ }
+ else {
+   subElement.innerHTML = 'Subscribe';
+   subElement.classList.remove('subd');
+ }
+}
+
+
+  </script>
+<P> Subscribe to the channel</P>
+<button onclick=" subFunc()" class="sub-button"> Subscribe</button>
+
+
+</body>
+</html>
