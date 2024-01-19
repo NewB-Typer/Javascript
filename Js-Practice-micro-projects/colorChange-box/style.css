@@ -1,0 +1,54 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gillroy';
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+
+#box{
+ height: 500px;
+ width: 500px;
+ border:1px solid black; 
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+
+} 
+
+#box::before,
+#box::after {
+  content: '';
+  position: absolute;
+  background-color: black;
+  opacity: 0;
+  transition: opacity 0.3s ease
+}
+
+#box:hover::before,
+#box:hover::after {
+opacity:1;
+}
+#box::before{
+  width: 100%;
+  height: 2px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+#box::after {
+  width: 2px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: black;
+  transition: background-color 0.5s ease;
+}
