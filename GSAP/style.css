@@ -1,0 +1,31 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html, body{
+  height: 100%;
+  width: 100%;
+}
+
+#screen{
+  height: 100%;
+  width: 100%;
+  background-color: aquamarine;
+}
+
+#card{
+  height: 400px;
+  width: 400px;
+  background-color: maroon;
+  transform: scale(0.5);
+  border: 15px  dotted white;
+}
+
+h1{
+  width: 300px;
+  background-color: black;
+  font-size: 40px;
+  color: orange;
+}

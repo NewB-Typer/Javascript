@@ -1,0 +1,61 @@
+/*
+@font-face{
+  font-family: anyname,
+  src: url(./locationFilename.ttf)
+}
+*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  height: 100%;
+  width: 100%; 
+}
+
+#page1{
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  overflow: hidden;
+}
+
+#page1 h1{
+font-size: 22vw;
+color: white;
+text-transform: uppercase;
+font-family: Tahoma;
+white-space: nowrap;
+font-stretch: 30%;
+font-weight: 300
+}
+#page2{
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+}
+#page3{
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+}
+
+#loader{
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(22, 58, 116); 
+  position: fixed;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+}
+#loader h1{
+  font-size: 90px;
+  font-family: Monument;
+  font-weight: 400;
+  color: wheat;
+}
+
