@@ -1,0 +1,37 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,body{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card{
+border: 2px solid green;
+  background-color:grey;
+  height: 10%;
+  width: 20%;
+padding: 10px;
+text-transform: uppercase;
+}
+
+.buttons{
+margin: 5px;
+}
+
+#start{
+margin-right: 8px;
+padding: 8px;
+border: 2px solid black;
+}
+#stop{
+  padding: 8px;
+  border: 2px solid black;
+}
+
