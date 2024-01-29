@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess The Number</title>
+  <link rel="stylesheet" href="gtn.css">
+</head>
+<body>
+
+  <div class="card">
+
+<button id="newG">New Game</button>
+
+
+<h1>Guess The Number</h1>
+<p>Press Enter for submission.</p>
+<hr>
+<p>You only get 5 attempts</p>
+
+  <input type="text" placeholder="Input Guess Here" id="iBox" autocomplete="off">
+
+
+<hr>
+<h2 id="prevGuess">Previous Guesses:  <span id="prevG"></span></h2>
+
+
+<hr>
+
+<h2 >Remaining Attempts: <span id="attempts">5</span></h2>
+
+<hr>
+
+<p class="msg" > Start guessing... </p>
+  </div>
+  
+</body>
+<script src="gtn.js"></script>
+</html>

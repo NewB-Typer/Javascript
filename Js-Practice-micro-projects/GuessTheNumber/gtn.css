@@ -1,0 +1,58 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  height: 100%;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+body{
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card{
+  height: 80%;
+  width: 70%;
+  background-color: whitesmoke;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+padding: 20px;
+gap: 40px;
+}
+
+input{
+  font-size: 20px;
+  width: 50px;
+}
+
+h1{
+  font-size: 70px;
+background-color: aqua;
+}
+
+p{
+  font-size: 20px;
+  color: darkred;
+}
+
+.msg{
+  font-size: 40px;
+color:chartreuse;
+background-color: black;
+}
+
+#newG{
+  height: 40px;
+  width: 90px;
+  border: 3px solid seagreen;
+  border-radius: 10px;
+  cursor: pointer;
+}
